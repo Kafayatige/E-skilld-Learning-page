@@ -1,0 +1,21 @@
+@mixin gs-button {
+    border-radius: 1.75rem;
+    width: 8.75rem;
+    height: 2.875rem;
+    color: #FFFFFF ;
+}
+
+@mixin body-text{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color:#83869A ;
+}
+
+@mixin course-name {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.25rem;
+    line-height: 1.5625rem;
+}
