@@ -1,11 +1,24 @@
-@mixin gs-button {
+@mixin flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin grid-container {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+@mixin gs-button { /*get-stated button*/
+    border: 0;
     border-radius: 1.75rem;
     width: 8.75rem;
     height: 2.875rem;
     color: #FFFFFF ;
 }
 
-@mixin body-text{
+@mixin body-text{ /* paragraph text*/
     font-style: normal;
     font-weight: 500;
     font-size: 1rem;
@@ -13,9 +26,24 @@
     color:#83869A ;
 }
 
-@mixin course-name {
+@mixin bold-font{
+    font-family: 'Plus Jakarta Sans';
     font-style: normal;
     font-weight: 800;
+    color: #13183F;
+}
+
+
+@mixin skilled {
+    @include bold-font;
+    font-size: 28px;
+    line-height: 35px;
+    
+}
+
+
+@mixin course-name {
+    @include bold-font;
     font-size: 1.25rem;
     line-height: 1.5625rem;
 }

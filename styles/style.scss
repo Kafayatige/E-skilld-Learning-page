@@ -1,15 +1,73 @@
-$fonts:'Jakarta', Plus Jakarta Sans, sans-serif;
-$paragraph-color: #83869A;
-$heading-color: #13183F;
-$btn-gs-txt-color: #FFFFFF;  /*button get started text color */
-$p-gs-txt-color: #F74780;  /*paragraph get started text color */
-
-
-
-
-:root{
-    font-family: Jakarta;
-    background-color: #FFFFFF;
-    font-size: 16px ;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+
+/* file import*/
+@import 'mixins';
+@import 'course';
+
+
+
+
+$fonts:'Jakarta', Plus Jakarta Sans, sans-serif;
+$red-gradient: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+$dark-blue: #13183F;
+
+
+
+
+body{
+    font-family: $fonts;
+    background-color: #FFFFFF;
+    font-size: 16px ;
+    min-height: 100vh;
+}
+
+.wrapper{
+    border: solid red 3px;
+    background-color: #FFFFFF; 
+    width: 100%
+}
+
+/*header**/
+.header{
+    @include flex-container;
+    margin: 1rem;
+}
+
+.header button{
+    @include gs-button; 
+    background-color: $dark-blue;
+}
+
+.header h3{
+    @include skilled
+}
+
+
+/*headline*/
+
+.headline{
+    @include grid-container;
+    margin:1rem;
+}
+
+  .headline h1{
+    @include bold-font;
+    font-size: 2.5rem;
+    line-height: 3.125rem;
+    margin: 16px 0;
+  }  
+
+  .headline p{
+    @include body-text;
+  }
+
+  .headline button{
+    @include gs-button;
+    background: $red-gradient;
+    margin: 14px 0;
+  }
