@@ -67,7 +67,7 @@ body{
     margin: 8px 0;
   }
 
-  .hero-image{
+  .mobile-image{
     background-image: url("../assets/image-hero-mobile.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -78,7 +78,7 @@ body{
   footer{
     padding: 2.25rem 1rem;
     background-color: $dark-blue;
-  }
+  } 
 
  .footer-items{
     @include flex-container;
@@ -89,8 +89,34 @@ body{
     background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
 }
 
+/*tablet*/
+.mobile-image{
+    display: none;
+}
+
+.hero{
+    display: flex;
+    margin-bottom: 8rem;
+}
+
+
+.headline{
+    height: 50vh;
+    width: 48%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
   
 
-  
+.hero-image{
+        background-image: url("../assets/image-hero-tablet.png");
+        background-position: bottom-left;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 640.71px;
+        height: 640px;
+        left: 425px;
+        top: -92.13px;
+}
 
   
