@@ -22,7 +22,7 @@ $red-gradient: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
 
   /*course cards*/
 
-  .course-card{
+  .course-container{
     padding-top: 24px;
   }
 
@@ -56,6 +56,34 @@ $red-gradient: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
     @include body-text;
   }
 
+  .course-title a{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color:#F74780;
+  }
+
+/*tablet*/
+
+@media (min-width:776px){
+
+    .courses{
+      width: 689px;
+      height: 930px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 32px 15px;
+    }
+
+    .check,
+    .course-title{
+      width: 100%;
+      height: 100%;
+      margin-top: 30px;
+    }
 
 
-  /*tablet*/
+}
