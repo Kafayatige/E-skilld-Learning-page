@@ -1,4 +1,6 @@
-@import 'variables';
+$box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+$red-gradient: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+
 
 
 .courses{
@@ -10,6 +12,7 @@
     @include bold-font;
     font-size: 1.5rem;
     line-height: 2rem;
+    height: 7.5rem;
     background: $red-gradient;
     color: #FFFFFF;
     margin: 16px 0;
@@ -17,11 +20,12 @@
     padding: 24px 28px;
   }
 
-  /*animation*/
+  /*course cards*/
 
   .course-card{
     padding-top: 24px;
   }
+
   .course-title{
     display: flex;
     flex-direction: column;
@@ -51,3 +55,7 @@
   .info p{
     @include body-text;
   }
+
+
+
+  /*tablet*/

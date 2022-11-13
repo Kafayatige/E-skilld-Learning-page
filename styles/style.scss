@@ -1,38 +1,36 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
 /* file import*/
 @import 'mixins';
-@import 'course';
-
-
-
+@import 'courses';
 
 $fonts:'Jakarta', Plus Jakarta Sans, sans-serif;
 $red-gradient: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
 $dark-blue: #13183F;
+$white-gradient: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
 
 
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: $fonts;
+    box-sizing: border-box;
+}
 
 
 body{
-    font-family: $fonts;
-    background-color: #FFFFFF;
-    font-size: 16px ;
-    min-height: 100vh;
+    background: $white-gradient
 }
 
-.wrapper{
-    border: solid red 3px;
-    background-color: #FFFFFF; 
-    width: 100%
-}
+.wrapper {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 80px;
+  }
 
-/*header**/
+
+/*mobile-first design*/
+
+/*header*/
 .header{
     @include flex-container;
     margin: 1rem;
@@ -43,9 +41,6 @@ body{
     background-color: $dark-blue;
 }
 
-.header h3{
-    @include skilled
-}
 
 
 /*headline*/
@@ -69,5 +64,33 @@ body{
   .headline button{
     @include gs-button;
     background: $red-gradient;
-    margin: 14px 0;
+    margin: 8px 0;
   }
+
+  .hero-image{
+    background-image: url("../assets/image-hero-mobile.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 333px;
+    width: 100%;
+  }
+
+  footer{
+    padding: 2.25rem 1rem;
+    background-color: $dark-blue;
+  }
+
+ .footer-items{
+    @include flex-container;
+}
+
+.footer-items button{
+    @include gs-button; 
+    background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+}
+
+  
+
+  
+
+  

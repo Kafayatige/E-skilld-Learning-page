@@ -7,15 +7,20 @@
 @mixin grid-container {
     display: grid;
     grid-template-rows: auto;
-    gap: 10px;
+    grid-gap: 16px;
 }
+
 
 @mixin gs-button { /*get-stated button*/
     border: 0;
     border-radius: 1.75rem;
     width: 8.75rem;
-    height: 2.875rem;
+    height: 3rem;
     color: #FFFFFF ;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
 }
 
 @mixin body-text{ /* paragraph text*/
@@ -33,13 +38,6 @@
     color: #13183F;
 }
 
-
-@mixin skilled {
-    @include bold-font;
-    font-size: 28px;
-    line-height: 35px;
-    
-}
 
 
 @mixin course-name {

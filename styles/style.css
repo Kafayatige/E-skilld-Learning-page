@@ -1,7 +1,183 @@
-/*button get started text color */
-/*paragraph get started text color */
-:root {
-  font-family: Jakarta;
+/* file import*/
+.courses {
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 16px;
+}
+
+.check {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 800;
+  color: #13183F;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  height: 7.5rem;
+  background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+  color: #FFFFFF;
+  margin: 16px 0;
+  border-radius: 10px;
+  padding: 24px 28px;
+}
+
+/*course cards*/
+.course-card {
+  padding-top: 24px;
+}
+
+.course-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
   background-color: #FFFFFF;
+}
+
+.icon {
+  margin-top: -38px;
+}
+
+.info {
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 16px;
+  background-color: #FFFFFF;
+}
+
+.info h4 {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 800;
+  color: #13183F;
+  font-size: 1.25rem;
+  line-height: 1.575rem;
+}
+
+.info p {
+  /* paragraph text*/
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: #83869A;
+}
+
+/*tablet*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Jakarta", Plus Jakarta Sans, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+}
+
+.wrapper {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+/*mobile-first design*/
+/*header*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+
+.header button {
+  /*get-stated button*/
+  border: 0;
+  border-radius: 1.75rem;
+  width: 8.75rem;
+  height: 3rem;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 700;
   font-size: 16px;
+  line-height: 28px;
+  background-color: #13183F;
+}
+
+/*headline*/
+.headline {
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 16px;
+  margin: 1rem;
+}
+
+.headline h1 {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 800;
+  color: #13183F;
+  font-size: 2.5rem;
+  line-height: 3.125rem;
+  margin: 16px 0;
+}
+
+.headline p {
+  /* paragraph text*/
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: #83869A;
+}
+
+.headline button {
+  /*get-stated button*/
+  border: 0;
+  border-radius: 1.75rem;
+  width: 8.75rem;
+  height: 3rem;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+  margin: 8px 0;
+}
+
+.hero-image {
+  background-image: url("../assets/image-hero-mobile.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 333px;
+  width: 100%;
+}
+
+footer {
+  padding: 2.25rem 1rem;
+  background-color: #13183F;
+}
+
+.footer-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-items button {
+  /*get-stated button*/
+  border: 0;
+  border-radius: 1.75rem;
+  width: 8.75rem;
+  height: 3rem;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
 }/*# sourceMappingURL=style.css.map */
