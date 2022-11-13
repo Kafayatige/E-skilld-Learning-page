@@ -1,0 +1,53 @@
+@import 'variables';
+
+
+.courses{
+    @include grid-container;
+  }
+
+  
+  .check{
+    @include bold-font;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    background: $red-gradient;
+    color: #FFFFFF;
+    margin: 16px 0;
+    border-radius: 10px;
+    padding: 24px 28px;
+  }
+
+  /*animation*/
+
+  .course-card{
+    padding-top: 24px;
+  }
+  .course-title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 16px;
+    border-radius: 10px; 
+    box-shadow: $box-shadow;
+    background-color: #FFFFFF;
+  }
+
+  .icon{
+    margin-top: -38px;
+  }
+
+  .info{
+    @include grid-container;
+    background-color: #FFFFFF;
+  }
+
+  .info h4{
+    @include bold-font;
+    font-size: 1.25rem;
+    line-height: 1.575rem;
+  }
+
+  .info p{
+    @include body-text;
+  }
