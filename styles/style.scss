@@ -6,6 +6,11 @@ $fonts:'Jakarta', Plus Jakarta Sans, sans-serif;
 $red-gradient: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
 $dark-blue: #13183F;
 $white-gradient: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+$hd-btn-hover-color: rgba(102, 108, 163, 1);
+$intro-btn-hover-color:linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+$gs-link-hover-color:rgba(255, 167, 195, 1);
+$ft-btn-hover-color: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+
 
 
 *{
@@ -40,6 +45,7 @@ body{
 .header button{
     @include gs-button; 
     background-color: $dark-blue;
+    
 }
 
 
@@ -96,10 +102,14 @@ body{
     .mobile-image{
         display: none;
     }
-    
+
     .hero{
         display: flex;
         margin-bottom: 8rem;
+    }
+
+    .header button{
+        z-index: 1;
     }
     
     
@@ -137,6 +147,8 @@ body{
         @include flex-container;
         margin-right: 3rem;
     }
+
+    
      
     .headline{
         max-width: 30%;
@@ -164,4 +176,33 @@ body{
 
 }
 
-  
+ /*active state*/ 
+ .header button,
+  .headline button,
+   .courses a,
+   .footer-items button
+   {
+    cursor:pointer;
+   }
+
+   .header button:hover{
+   background:$hd-btn-hover-color;
+   }
+
+   .headline button:hover{
+    background:$intro-btn-hover-color;
+   }
+
+   .courses a:hover{
+    color:$gs-link-hover-color;
+   }
+
+   .footer-items button:hover{
+    background:$ft-btn-hover-color;
+   }
+
+   
+
+          
+   
+ 
