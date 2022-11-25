@@ -67,7 +67,7 @@ $red-gradient: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
 
 /*tablet*/
 
-@media (min-width:776px){
+@media (min-width:576px){
 
     .courses{
       width: 689px;
@@ -85,5 +85,19 @@ $red-gradient: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
       margin-top: 30px;
     }
 
+
+}
+
+
+/*Desktop*/
+@media (min-width:988px){
+        .courses{
+          width: 1110px;
+          height: 748px;  
+          margin: auto;
+          display: grid;
+          grid-template-columns: repeat(3, 2fr);
+          grid-gap: 32px 15px;
+        }
 
 }
