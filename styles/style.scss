@@ -1,3 +1,22 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: $white-gradient;
+    overflow-x: hidden;
+    font-family: $fonts;
+}
+
+
 /* file import*/
 @import 'mixins';
 @import 'courses';
@@ -13,19 +32,7 @@ $ft-btn-hover-color: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 2
 
 
 
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-family: $fonts;
-    box-sizing: border-box;
-}
 
-
-body{
-    background: $white-gradient;
-    overflow-x: hidden;
-}
 
 .wrapper {
     width: 90%;
