@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Kafayatige/E-skilled-Learning-page)
-- Live Site URL: [Add live site URL here](https://kafayatige.github.io/E-skilled-Learning-page/)
+- Solution URL: [solution URL](https://github.com/Kafayatige/E-skilled-Learning-page)
+- Live Site URL: [live site URL](https://kafayatige.github.io/E-skilled-Learning-page/)
 
 ## My process
 

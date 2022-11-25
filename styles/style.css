@@ -272,11 +272,12 @@ footer {
   }
   .hero-image {
     background-image: url("../assets/image-hero-desktop.png");
+    background-position: bottom-left;
     background-repeat: no-repeat;
-    position: absolute;
     width: 991.63px;
     height: 936.92px;
-    transform: translate(900px, -210px);
+    transform: translate(950px, -220px);
+    
   }
 }
 /*active state*/
